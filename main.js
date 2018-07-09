@@ -1,8 +1,8 @@
-import * as http from "http";
+const http = require('http');
 
 let state = 10;
-
-createServer((req, res) => {
+http
+.createServer((req, res) => {
     console.log(req.method, req.url);
     console.log(state);
     // state
